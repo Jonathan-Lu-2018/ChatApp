@@ -18,7 +18,7 @@ body {
    font-size: 1rem;
    line-height: 1.58;
    color: #333;
-   background-color: #38f0ed80;
+   background-color: cornflowerblue;
    height: 100%;
 }
 
@@ -60,27 +60,28 @@ input {
    outline: none;
 }
 
-h1
-{
-   padding-top:0;
+h1 {
+   padding-top: 0;
    margin-top: 0px;
    margin-bottom: 50px;
    font-size: 2em;
    text-decoration: underline;
 }
-h2,h3,h4,h5,h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
    margin-top: 20px;
    margin-bottom: 20px;
    font-size: 1.5em;
 }
 
-
 a {
    color: #128ff2;
 }
 
-.logo
-{
+.logo {
    width: 200px;
    height: 70px;
    margin-bottom: 0;
@@ -110,7 +111,7 @@ button.default {
 }
 
 button.primary {
-   background-color: #534d4d;
+   background-color: rgb(57, 161, 57);
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
    color: #fff;
 }
@@ -121,12 +122,10 @@ button.accent {
    color: #fff;
 }
 
-button.accent:hover
-{
-   background-color: rgb(166, 166, 166);
+button.accent:hover {
+   background-color: crimson;
    transition: 1s;
 }
-
 
 #username-page {
    text-align: center;
