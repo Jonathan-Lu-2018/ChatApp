@@ -47,12 +47,20 @@ body:before {
    width: 100%;
    min-height: 38px;
    font-size: 15px;
-   border: 1px solid #c8c8c8;
+   border: 3px solid rgb(211,23,60);
+   
+}
+
+.form-control2 {
+   width: 100%;
+   min-height: 38px;
+   font-size: 15px;
+   border: 3px solid rgb(57, 161, 57);
+   
 }
 
 .form-group {
    margin-bottom: 15px;
-   border: black;
 }
 
 input {
@@ -65,8 +73,9 @@ h1 {
    margin-top: 0px;
    margin-bottom: 50px;
    font-size: 2em;
-   text-decoration: underline;
 }
+
+
 h2,
 h3,
 h4,
@@ -86,6 +95,16 @@ a {
    height: 70px;
    margin-bottom: 0;
    margin-top: 0;
+}
+
+.logo2 {
+   width: 200px;
+   height: 50px;
+   margin-bottom: 0;
+   margin-top: 0;
+   padding: 0px 10px;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 button {
@@ -116,15 +135,21 @@ button.primary {
    color: #fff;
 }
 
+button.primary:hover {
+   background-color: cornflowerblue;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+   color: #fff;
+}
+
 button.accent {
-   background-color: #534d4d;
+   background-color: rgb(211,23,60);
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
    color: #fff;
 }
 
 button.accent:hover {
-   background-color: crimson;
-   transition: 1s;
+   background-color: rgb(75, 68, 68);
+   transition: all 0.8s ease-in-out;
 }
 
 #username-page {
@@ -133,26 +158,28 @@ button.accent:hover {
 
 .username-page-container {
    background: rgb(235, 233, 233);
-   box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-   border-radius: 10px;
+   border-radius: 100px;
    width: 100%;
-   max-width: 500px;
+   max-width: 800px;
    display: inline-block;
-   margin-top: 42px;
+   /*margin-top: 42px;*/
    vertical-align: middle;
-   position: relative;
-   padding: 35px 55px 35px;
+   position: absolute;
+   padding: 35px 35px 15px;
    min-height: 250px;
    position: absolute;
-   top: 50%;
+   top: 45%;
    left: 0;
    right: 0;
    margin: 0 auto;
    margin-top: -160px;
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.664);
+   border: 5px solid rgb(211,23,60)
 }
 
 .username-page-container .username-submit {
    margin-top: 10px;
+   width: 100px;
 }
 
 #chat-page {
@@ -161,15 +188,17 @@ button.accent:hover {
 }
 
 .chat-container {
-   max-width: 700px;
+   max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
-   background-color: #fff;
-   box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+   background-color: rgb(231, 229, 229);
    margin-top: 30px;
    height: calc(100% - 60px);
    max-height: 600px;
    position: relative;
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.664);
+   border: 5px solid rgb(57, 161, 57);
+   border-radius: 50px;
 }
 
 #chat-page ul {
@@ -180,6 +209,7 @@ button.accent:hover {
    overflow-y: scroll;
    padding: 0 20px 0px 20px;
    height: calc(100% - 150px);
+   border-bottom: 3px solid rgb(57, 161, 57);
 }
 
 #chat-page #messageForm {
@@ -245,6 +275,8 @@ button.accent:hover {
    width: calc(100% - 85px);
 }
 
+
+
 #messageForm .input-group button {
    float: left;
    width: 80px;
@@ -254,8 +286,8 @@ button.accent:hover {
 
 .chat-header {
    text-align: center;
-   padding: 15px;
-   border-bottom: 1px solid #ececec;
+   padding: 10px;
+   border-bottom: 3px solid rgb(57, 161, 57);
 }
 
 .chat-header h2 {
