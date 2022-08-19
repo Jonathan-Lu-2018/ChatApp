@@ -18,7 +18,7 @@ body {
    font-size: 1rem;
    line-height: 1.58;
    color: #333;
-   background-color: #f4f4f4;
+   background-color: #38f0ed80;
    height: 100%;
 }
 
@@ -28,7 +28,7 @@ body:before {
    position: absolute;
    top: 0;
    left: 0;
-   background: #1ebea5;
+   /*background: #1ebea5;*/
    content: '';
    z-index: 0;
 }
@@ -52,6 +52,7 @@ body:before {
 
 .form-group {
    margin-bottom: 15px;
+   border: black;
 }
 
 input {
@@ -59,22 +60,31 @@ input {
    outline: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1
+{
+   padding-top:0;
+   margin-top: 0px;
+   margin-bottom: 50px;
+   font-size: 2em;
+   text-decoration: underline;
+}
+h2,h3,h4,h5,h6 {
    margin-top: 20px;
    margin-bottom: 20px;
+   font-size: 1.5em;
 }
 
-h1 {
-   font-size: 1.7em;
-}
 
 a {
    color: #128ff2;
+}
+
+.logo
+{
+   width: 200px;
+   height: 70px;
+   margin-bottom: 0;
+   margin-top: 0;
 }
 
 button {
@@ -90,8 +100,9 @@ button {
    transition: all 0.2s ease-in-out;
    cursor: pointer;
    min-height: 38px;
+   background-color: #514a4a;
+   color: white;
 }
-
 button.default {
    background-color: #e8e8e8;
    color: #333;
@@ -99,25 +110,32 @@ button.default {
 }
 
 button.primary {
-   background-color: #1ebea5;
+   background-color: #534d4d;
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
    color: #fff;
 }
 
 button.accent {
-   background-color: #ff4743;
+   background-color: #534d4d;
    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
    color: #fff;
 }
+
+button.accent:hover
+{
+   background-color: rgb(166, 166, 166);
+   transition: 1s;
+}
+
 
 #username-page {
    text-align: center;
 }
 
 .username-page-container {
-   background: #fff;
+   background: rgb(235, 233, 233);
    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-   border-radius: 2px;
+   border-radius: 10px;
    width: 100%;
    max-width: 500px;
    display: inline-block;
